@@ -11,7 +11,7 @@ import SwiftUI
 struct CollageGlowingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView(viewModel: ListViewModelImpl().toAnyViewModel())
         }
     }
 }
