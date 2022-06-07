@@ -1,6 +1,5 @@
 # ideal-happiness
 
-# Perfect: Server-Side Swift 
 <p align="center">
     <img src="https://www.hackingwithswift.com/files/simple-swiftui/logo.png" alt="Simple SwiftUI logo" width="648" maxHeight="156" />
 </p>
@@ -13,6 +12,11 @@
         <img src="https://img.shields.io/badge/Swift-5.6-brightgreen.svg" />
     </a>
 </p>
+
+## Contents
+- SwiftUI
+- Combine
+- MVVM
 
 ## Main Features
 
