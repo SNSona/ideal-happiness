@@ -53,6 +53,7 @@ struct ListView: View {
                 
                 KFImage(URL(string: item.downloadURL)!)
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 90, height: 90, alignment: .leading)
                     .clipShape(RoundedRectangle(cornerRadius: 45))
                 

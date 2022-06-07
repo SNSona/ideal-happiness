@@ -31,6 +31,16 @@ class ImageViewModel: ViewModelBase<ImageDataView.ViewState, ImageDataView.ViewI
                 .assign(to: \.state.isLoading, on: self),
         ]
     }
+    
+    override func trigger(
+        _ input: ImageDataView.ViewInput
+    ) {
+        switch input {
+            
+        case let .sendImage(image):
+            state.image = image
+        }
+    }
 }
 
 final class ImageViewModelImpl: ImageViewModel {
