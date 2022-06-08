@@ -6,10 +6,10 @@
 //
 
 import XCTest
-@testable import CollageGlowing
+//@testable import CollageGlowing
 
 class Tests_iOS_MVVM: XCTestCase {
-    let view = ListView(viewModel: ListViewModelImpl().toAnyViewModel())
+//    let view = ListView(viewModel: ListViewModelImpl().toAnyViewModel())
 
     override func setUpWithError() throws {
         
@@ -20,7 +20,7 @@ class Tests_iOS_MVVM: XCTestCase {
     }
 
     func testExample() throws {
-        XCTAssertTrue(view.viewModel.state.list.isEmpty)
+//        XCTAssertTrue(view.viewModel.state.list.isEmpty)
         //TO DO
     }
 

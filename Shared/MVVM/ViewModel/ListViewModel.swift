@@ -19,14 +19,8 @@ extension String: LocalizedError {
 // MARK: - ViewModelBase
 
 class ListViewModel: ViewModelBase<ListView.ViewState, ListView.ViewInput> {
-    typealias LoadingContent = ListView.LoadingContent
     
-    fileprivate var isLoading: Set<LoadingContent> {
-        get { isLoadingSubject.value }
-        set { isLoadingSubject.send(newValue) }
-    }
-    
-    private let isLoadingSubject = CurrentValueSubject<Set<LoadingContent>, Never>([])
+    private let isLoadingSubject = CurrentValueSubject<Bool, Never>(false)
     private let listSubject = CurrentValueSubject<ImageList, Never>([])
     
     func createImageViewModel(_ imageData: ImageData) -> ImageDataView.ViewModel? { fatalError(.notImplemented) }
@@ -63,13 +57,11 @@ class ListViewModel: ViewModelBase<ListView.ViewState, ListView.ViewInput> {
     }
     
     private func loadList() {
-        guard  !isLoading.contains(.conetent) else { return }
-        
         listService.loadImages()
             .receive(on: DispatchQueue.main)
             .handleEvents(
-                receiveSubscription: { [weak self] _ in self?.isLoading.insert(.conetent) },
-                receiveCompletion: { [weak self] _ in self?.isLoading.remove(.conetent) }
+                receiveSubscription: { [weak self] _ in self?.isLoadingSubject.send(true) },
+                receiveCompletion: { [weak self] _ in self?.isLoadingSubject.send(false) }
             )
             .sink(receiveCompletion: { completion in
                 switch completion {

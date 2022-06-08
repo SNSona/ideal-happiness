@@ -14,7 +14,7 @@ extension ListView {
     // MARK: - State
     
     struct ViewState {
-        var isLoading = Set<LoadingContent>()
+        var isLoading = false
         var list = ImageList()
         var imageDataViewModel: ImageDataView.ViewModel?
     }
@@ -24,12 +24,6 @@ extension ListView {
     enum ViewInput {
         case showImage(ImageData)
         case reloadList
-    }
-    
-    // MARK: - Model Date
-    
-    enum LoadingContent: Hashable {
-        case conetent
     }
 }
 
@@ -101,7 +95,7 @@ struct ListView: View {
                         Image("logo")
                     )
                 
-                if viewModel.isLoading.contains(.conetent) {
+                if viewModel.isLoading {
                     ProgressView("Loading photos...")
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
                         .frame(width: 120, height: 120, alignment: .top )
