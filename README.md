@@ -28,11 +28,11 @@
 ## Extra Credit
 
 - [ ] Unit tests
-- [ ] Snapshot tests
+- [x] Snapshot tests
 - [x] Cache for images
 - [ ] Cache for requests
-- [ ] Allow to save photos to local gallery
-- [ ] Allow to share the photo with social media
+- [x] Allow to save photos to local gallery
+- [x] Allow to share the photo with social media
 
 ## Extra Credit
 
