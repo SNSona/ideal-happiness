@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7C2CA4228520EFE002A9E0D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E7C2CA4128520EFE002A9E0D /* Kingfisher */; };
 		E7DCB394284FBF1B005C7DD2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB393284FBF1B005C7DD2 /* Tests_iOS.swift */; };
 		E7DCB396284FBF1B005C7DD2 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB395284FBF1B005C7DD2 /* Tests_iOSLaunchTests.swift */; };
 		E7DCB3A0284FBF1C005C7DD2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB39F284FBF1C005C7DD2 /* Tests_macOS.swift */; };
@@ -109,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C2CA4228520EFE002A9E0D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +353,6 @@
 			);
 			name = "CollageGlowing (iOS)";
 			packageProductDependencies = (
-				E7C2CA4128520EFE002A9E0D /* Kingfisher */,
 			);
 			productName = "CollageGlowing (iOS)";
 			productReference = E7DCB382284FBF1B005C7DD2 /* CollageGlowing.app */;
@@ -472,7 +469,6 @@
 			);
 			mainGroup = E7DCB375284FBF1A005C7DD2;
 			packageReferences = (
-				E7C2CA4028520EFE002A9E0D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E7DCB383284FBF1B005C7DD2 /* Products */;
 			projectDirPath = "";
@@ -1020,25 +1016,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E7C2CA4028520EFE002A9E0D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E7C2CA4128520EFE002A9E0D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E7C2CA4028520EFE002A9E0D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7DCB376284FBF1A005C7DD2 /* Project object */;
 }
