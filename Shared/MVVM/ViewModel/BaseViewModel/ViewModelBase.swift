@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-class ViewModelBase<State, Input>: NSObject, ViewModel {
+class ViewModelBase<State, Input>: ViewModel {
     
     @Published var state: State
     var bindings: [AnyCancellable] { [] }
@@ -10,7 +10,7 @@ class ViewModelBase<State, Input>: NSObject, ViewModel {
         state: State
     ) {
         self.state = state
-        super.init()
+//        super.init()
         bind()
     }
     

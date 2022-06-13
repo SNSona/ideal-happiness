@@ -44,8 +44,9 @@ struct ListView: View {
                 .foregroundStyle(.ultraThinMaterial)
             
             HStack {
-                
-                KFImage(URL(string: item.downloadURL)!)
+
+                KFImage(URL(string: item.downloadURL))
+                    .downsampling(size: CGSize(width: 200, height: 200))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 90, height: 90, alignment: .leading)
