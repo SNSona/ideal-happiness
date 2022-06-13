@@ -39,6 +39,7 @@
 		E7DCB46728502A08005C7DD2 /* Tests iOS API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB46628502A08005C7DD2 /* Tests iOS API.swift */; };
 		E7DCB4692850875C005C7DD2 /* Tests iOS MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB4682850875C005C7DD2 /* Tests iOS MVVM.swift */; };
 		E7DEDE5B28521CBB0022F8FF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E7DEDE5A28521CBB0022F8FF /* Kingfisher */; };
+		E7DEDE7F2857E2B00022F8FF /* Publisher+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDE7E2857E2B00022F8FF /* Publisher+EX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		E7DCB46228502156005C7DD2 /* UITests iOS PhotoDitailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITests iOS PhotoDitailsPage.swift"; sourceTree = "<group>"; };
 		E7DCB46628502A08005C7DD2 /* Tests iOS API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests iOS API.swift"; sourceTree = "<group>"; };
 		E7DCB4682850875C005C7DD2 /* Tests iOS MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests iOS MVVM.swift"; sourceTree = "<group>"; };
+		E7DEDE7E2857E2B00022F8FF /* Publisher+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+EX.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 			children = (
 				E7DCB3BE284FBFE1005C7DD2 /* NavigationManager.swift */,
 				E7DCB3C0284FBFE8005C7DD2 /* ZoomingManager.swift */,
+				E7DEDE7E2857E2B00022F8FF /* Publisher+EX.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				E7DCB3DD284FC0B3005C7DD2 /* ViewModelBase.swift in Sources */,
 				E7DCB3DF284FC0B8005C7DD2 /* ViewModel.swift in Sources */,
 				E7DCB3D2284FC064005C7DD2 /* APIRequestCreator.swift in Sources */,
+				E7DEDE7F2857E2B00022F8FF /* Publisher+EX.swift in Sources */,
 				E7DCB3D0284FC05B005C7DD2 /* APIError.swift in Sources */,
 				E7DCB3CE284FC056005C7DD2 /* Target.swift in Sources */,
 				E7DCB3C3284FBFEF005C7DD2 /* CancelableStore.swift in Sources */,

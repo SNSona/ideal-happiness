@@ -36,10 +36,10 @@ class ListViewModel: ViewModelBase<ListView.ViewState, ListView.ViewInput> {
         [
             listSubject
                 .removeDuplicates()
-                .assign(to: \.state.list, on:  self),
+                .assignWeakly(to: \.state.list, on: self),
             
             isLoadingSubject
-                .assign(to: \.state.isLoading, on: self),
+                .assignWeakly(to: \.state.isLoading, on: self),
         ]
     }
     
